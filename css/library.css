@@ -1,0 +1,133 @@
+:root {
+  --main-color: #d98400;
+  --secondary-color: #2f2617;
+  --text-color: #747272;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.grid {
+  display: grid;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  transition: all 0.2s linear;
+  left: 50%;
+}
+
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.btn {
+  border: 1px solid var(--main-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 60px;
+  transition: all 0.2s linear;
+}
+
+.main-title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: var(--secondary-color);
+}
+
+.btn-white {
+  color: var(--main-color);
+}
+
+.btn-white:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.btn-orange {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.btn-orange:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+
